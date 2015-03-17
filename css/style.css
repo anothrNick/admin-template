@@ -66,12 +66,12 @@ body{
 	left: 0;
 	top: 0;
 	
-	transition: background-color .15s ease-in-out;
-   -moz-transition: background-color .15s ease-in-out;
-   -webkit-transition: background-color .15s ease-in-out;
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+   -moz-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+   -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 .mpl-btn:hover{
-	border: 1px solid rgba(0,0,0,.05);
+	border: 1px solid rgba(255,255,255,.1);
 	border-bottom: 3px solid rgba(0,0,0,.05);
 }
 .mpl-btn:active{
@@ -79,11 +79,27 @@ body{
 	margin-top: 1px;
 }
 .mpl-btn:hover>span:first-child{
-	background-color: rgba(255,255,255,.2);
+	background-color: rgba(255,255,255,.1);
 }
 .mpl-btn:active>span:first-child{
 	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
 	background-color: transparent;
+}
+
+.btn-group>.mpl-btn, .btn-group-vertical>.mpl-btn {
+  position: relative;
+  float: left;
+}
+.btn-group>.mpl-btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group>.mpl-btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group>.mpl-btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  border-radius: 0;
 }
 
 /*
