@@ -5,7 +5,6 @@
 		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="plugins/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
 		<script language="javascript" type="text/javascript" src="js/script.js"></script>
 		<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -17,45 +16,21 @@
 	<body>
 	
 		<!-- Fixed navbar -->
-		<nav id="main-nav" class="navbar navbar-light navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div id="nav-wrap">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="#">Project Name</a>
-                </div>
-                <!-- /.navbar-header -->
-		
-				<ul class="nav mpl-links navbar-nav-light">
+		<nav class="navbar navbar-light" id="main-nav">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<i class="fa fa-bars"></i>
+				</button>
+				
+				<a class="navbar-brand" href="#">Project name</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				
+				
+				<ul class="nav navbar-nav navbar-nav-light navbar-right">
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope"></i></a>
-						<ul class="dropdown-menu arrow" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-bell"></i></a>
-						<ul class="dropdown-menu arrow" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-					
-					<li class="dropdown pull-right">
-						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 							<span class="glyphicon glyphicon-user"></span>
 							User
 						</a>
@@ -67,10 +42,12 @@
 						</ul>
 					</li>
 				</ul>
-		
-            </div>
-            <div class="mpl-sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse collapse">
+			</div><!--/.nav-collapse -->
+		</nav>
+
+		<aside class="mpl-sidebar">
+			<div role="navigation">
+                <div id="side-bar" class="sidebar-nav">
                     <ul class="nav" id="side-menu">
                         <li>
                             <a class="active nav-top" id="dashboard-nav" href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
@@ -127,8 +104,7 @@
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
-            <!-- /.navbar-static-side -->
-        </nav>
+		</aside>
 		<!-- Begin page content -->
 		<div id="content" class="">
 		
@@ -456,12 +432,14 @@
 				</div>
 			</div>
 			
-			<footer class="footer">
-				<div class="container">
-					<p class="footer-text text-muted">&copy; company 2015</p>
-				</div>
-			</footer>	
+			
 		</div>
+
+		<footer class="footer">
+		  <div class="container">
+			<p class="footer-text text-muted">&copy; company 2015</p>
+		  </div>
+		</footer>	
 		
 		<script>
 		$(function() {

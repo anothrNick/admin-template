@@ -1,14 +1,15 @@
 html{
 	position: relative;
-	min-height: 100%;
+	height: 100%;
 }
 
 body{
-	background-color: #e7ebee;
+	background-color: #fff;
 	font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 	color: #515151;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased !important;
+	height: 100%;
 }
 
 
@@ -115,7 +116,7 @@ Best looking:
 #main-nav{
 	z-index: 100;
 }
-#main-nav>div>.navbar-brand{
+.navbar-brand{
 	/* sidebar width*/
 	width: 200px;
 }
@@ -127,7 +128,7 @@ Best looking:
 	border: none;
 	border-bottom: 1px solid #ddd;
 }
-.navbar-light>.navbar-header>a {
+.navbar-light .navbar-header>a {
 	color: #515151;
 }
 .navbar-nav-light>li>a {
@@ -144,15 +145,6 @@ Best looking:
 /* SIDEBAR */
 .mpl-sidebar{
 	/* sidebar width*/
-	width: 200px;
-	min-height: 100%;
-	position: absolute;
-	top: 0;
-	background-color: #FFF;
-	border-right: 1px solid #ddd;
-	padding-top: 51px;
-	z-index: 50;
-	margin-left: -200px;
 }
 .mpl-sidebar .navbar-collapse{
 	padding:0px;
@@ -193,6 +185,7 @@ Best looking:
 
 .fa.arrow{
 	padding-top: 3px;
+	float: right;
 }
 .fa.arrow:before {
 	content: "\f104";
@@ -201,12 +194,50 @@ Best looking:
 	content: "\f107";
 }
 
+/* NAV LINKS */
+.mpl-links {
+    margin-right: 0;
+}
+
+.mpl-links li {
+    display: inline-block;
+}
+
+.mpl-links>li:first-child {
+    margin-left: 15px;
+}
+.mpl-links>li:last-child {
+    margin-right: 15px;
+}
+
+.mpl-links li a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+.mpl-links .dropdown-menu li {
+    display: block;
+}
+
+.mpl-links .dropdown-menu li:last-child {
+    margin-right: 0;
+}
+
+.mpl-links .dropdown-menu li a {
+    padding: 3px 20px;
+    min-height: 0;
+}
 
 /* CONTENT */
 #content{
-	padding: 0 20px 42px;
+	padding: 141px 20px 52px;
 	/* sidebar width*/
 	margin-left: 0px;
+	background-color: #e7ebee;
+	border-left: 1px solid #ddd;
+	min-height: 100%;
+	margin-top: -121px;
+	position: relative;
 }
 
 
@@ -331,6 +362,8 @@ h1, h2, h3 {
 	background-color: #eee;
 	border-top: 1px solid #ddd;
 	text-align: center;
+	margin-left: -20px;
+	margin-bottom: -20px;
 }
 .footer-text{
 	margin: 0;
@@ -344,9 +377,18 @@ h1, h2, h3 {
 {
 	.mpl-sidebar{
 		margin-left: 0px;
+		z-index: 1;
+		position: absolute;
+		width: 200px;
+		margin-top: 1px;
 	}
 	#content{
 		margin-left: 200px;
+		margin-top: -51px;
+		padding-top: 71px;
+	}
+	.footer{
+			margin-bottom: 0px;
 	}
 }
 
