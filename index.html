@@ -3,14 +3,17 @@
 	<head>
 		<title>Template</title>
 		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href="plugins/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="plugins/toastr/toastr.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<script language="javascript" type="text/javascript" src="js/script.js"></script>
 		<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
 		<!-- Metis Menu Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
 
 	</head>
 	
@@ -142,7 +145,7 @@
 							<h4>Meeple Buttons</h4>
 							<div class="row">
 								<div class="col-xs-12">
-									<button class="mpl-btn btn-primary">Button<span></span></button>
+									<button class="mpl-btn btn-blue">Button<span></span></button>
 									<button class="mpl-btn btn-purple">Button<span></span></button>
 									<button class="mpl-btn btn-picton"><span></span>Button</button>
 									<button class="mpl-btn btn-jungle"><span></span>Button</button>
@@ -156,7 +159,7 @@
 							<div class="row">
 								<div class="col-xs-12">
 								<div class="btn-group" role="group" aria-label="...">
-									<button class="mpl-btn btn-primary">Button<span></span></button>
+									<button class="mpl-btn btn-blue">Button<span></span></button>
 									<button class="mpl-btn btn-purple">Button<span></span></button>
 									<button class="mpl-btn btn-picton"><span></span>Button</button>
 									<button class="mpl-btn btn-jungle"><span></span>Button</button>
@@ -229,6 +232,8 @@
 				</div>
 			</div>
 			
+			<br/>
+			
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="row">
@@ -290,20 +295,20 @@
 											<form class="form-horizontal mpl-form">
 											
 												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-													<div class="col-sm-10">
+													<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+													<div class="col-sm-9">
 														<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+													<div class="col-sm-9">
 														<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Select</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Select</label>
+													<div class="col-sm-9">
 														<select class="form-control">
 															<option disabled selected>select something</option>
 															<option>a select option #1</option>
@@ -312,13 +317,13 @@
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Description</label>
+													<div class="col-sm-9">
 														<textarea rows="4" class="form-control" id="desc" placeholder="Description"></textarea>
 													</div>
 												</div>
 												<div class="form-group">
-													<div class="col-sm-offset-2 col-sm-10">
+													<div class="col-sm-offset-3 col-sm-9">
 													<div class="checkbox">
 														<label>
 															<input type="checkbox"> Remember me
@@ -334,20 +339,20 @@
 											<form class="form-horizontal mpl-form">
 											
 												<div class="form-group">
-													<label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-													<div class="col-sm-10">
+													<label for="inputEmail3" class="col-sm-3 control-label">Email</label>
+													<div class="col-sm-9">
 														<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Password</label>
+													<div class="col-sm-9">
 														<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Select</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Select</label>
+													<div class="col-sm-9">
 														<select class="form-control">
 															<option disabled selected>select something</option>
 															<option>a select option #1</option>
@@ -356,13 +361,13 @@
 													</div>
 												</div>
 												<div class="form-group">
-													<label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-													<div class="col-sm-10">
+													<label for="inputPassword3" class="col-sm-3 control-label">Description</label>
+													<div class="col-sm-9">
 														<textarea rows="4" class="form-control" id="desc" placeholder="Description"></textarea>
 													</div>
 												</div>
 												<div class="form-group">
-													<div class="col-sm-offset-2 col-sm-10">
+													<div class="col-sm-offset-3 col-sm-9">
 													<div class="checkbox">
 														<label>
 															<input type="checkbox"> Remember me
@@ -386,7 +391,9 @@
 
 				</div>
 			</div>
-
+			
+			<br/>
+			
 			<div class="row">
 				<div class="col-xs-12">
 				
@@ -503,6 +510,178 @@
 				</div>
 			</div>
 			
+			<br/>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<p class="lead">Notifications</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+				
+					<div class="panel">
+						<div class="panel-heading panel-underline"><h4 class="panel-title">Toastr</h4></div>
+
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="mpl-form">
+										<div class="form-group">
+											<label class="control-label" for="title">Title</label>
+											<input id="title" type="text" class="form-control" placeholder="Enter a title ..." />
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="message">Message</label>
+											<textarea class="form-control" id="message" rows="3" placeholder="Enter a message ..."></textarea>
+										</div>
+									</div>
+									<div class="control-group">
+										<div class="checkbox">
+											<label for="closeButton">
+												<input id="closeButton" type="checkbox" value="checked" class="input-mini" />Close Button
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="addBehaviorOnToastClick">
+												<input id="addBehaviorOnToastClick" type="checkbox" value="checked" class="input-mini" />Add behavior on toast click
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="debugInfo">
+												<input id="debugInfo" type="checkbox" value="checked" class="input-mini" />Debug
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="progressBar">
+												<input id="progressBar" type="checkbox" value="checked" class="input-mini" />Progress Bar
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="preventDuplicates">
+												<input id="preventDuplicates" type="checkbox" value="checked" class="input-mini" />Prevent Duplicates
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="addClear">
+												<input id="addClear" type="checkbox" value="checked" class="input-mini" />Add button to force clearing a toast, ignoring focus
+											</label>
+										</div>
+										<div class="checkbox">
+											<label for="newestOnTop">
+												<input id="newestOnTop" type="checkbox" value="checked" class="input-mini" />Newest on top
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-3">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="control-group" id="toastTypeGroup">
+												<div class="controls">
+													<label>Toast Type</label>
+													<div class="radio"><label><input type="radio" name="toasts" value="success" checked /> Success</label></div>
+													<div class="radio"><label><input type="radio" name="toasts" value="info" /> Info</label></div>
+													<div class="radio"><label><input type="radio" name="toasts" value="warning" /> Warning</label></div>
+													<div class="radio"><label><input type="radio" name="toasts" value="error" /> Error</label></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="control-group" id="positionGroup">
+												<div class="controls">
+													<label>Position</label>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-top-right" checked /> Top Right</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-bottom-right" /> Bottom Right</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-bottom-left" /> Bottom Left</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-top-left" /> Top Left</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-top-full-width" /> Top Full Width</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-bottom-full-width" /> Bottom Full Width</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-top-center" /> Top Center</label></div>
+													<div class="radio"><label><input type="radio" name="positions" value="toast-bottom-center" /> Bottom Center</label></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-horizontal mpl-form">
+										<div class="form-group">
+											<label class="control-label col-md-3" for="showEasing">Show Easing</label>
+											<div class="col-sm-9">
+												<input id="showEasing" type="text" placeholder="swing, linear" class="form-control" value="swing" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="hideEasing">Hide Easing</label>
+											<div class="col-sm-9">
+												<input id="hideEasing" type="text" placeholder="swing, linear" class="form-control" value="linear" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="showMethod">Show Method</label>
+											<div class="col-sm-9">
+												<input id="showMethod" type="text" placeholder="show, fadeIn, slideDown" class="form-control" value="fadeIn" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="hideMethod">Hide Method</label>
+											<div class="col-sm-9">
+												<input id="hideMethod" type="text" placeholder="hide, fadeOut, slideUp" class="form-control" value="fadeOut" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="showDuration">Show Duration</label>
+											<div class="col-sm-9">
+												<input id="showDuration" type="text" placeholder="ms" class="form-control" value="300" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="hideDuration">Hide Duration</label>
+											<div class="col-sm-9">
+												<input id="hideDuration" type="text" placeholder="ms" class="form-control" value="1000" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="timeOut">Time out</label>
+											<div class="col-sm-9">
+												<input id="timeOut" type="text" placeholder="ms" class="form-control" value="5000" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3" for="extendedTimeOut">Extended Time out</label>
+											<div class="col-sm-9">
+												<input id="extendedTimeOut" type="text" placeholder="ms" class="form-control" value="1000" />
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="row">
+								<div class="col-xs-12">
+									<button type="button" class="btn btn-primary" id="showtoast">Show Toast</button>
+									<button type="button" class="btn btn-danger" id="cleartoasts">Clear Toasts</button>
+									<button type="button" class="btn btn-danger" id="clearlasttoast">Clear Last Toast</button>
+								</div>
+							</div>
+
+							<div class="row" style='margin-top: 25px;'>
+								<div class="col-md-12">
+									<pre id='toastrOptions'></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<footer class="footer">
 				<div class="container">
 					<p class="footer-text text-muted">&copy; company 2015</p>
@@ -517,6 +696,159 @@
 
 		});
 
+		</script>
+		
+		<script type="text/javascript">
+			// toastr demo
+			$(function () {
+				var i = -1;
+				var toastCount = 0;
+				var $toastlast;
+
+				var getMessage = function () {
+					var msgs = ['Success! Something happened.',
+						'Error. There was a problem doing something',
+						'New notification',
+						'New Message',
+						'New hablah'
+					];
+					i++;
+					if (i === msgs.length) {
+						i = 0;
+					}
+
+					return msgs[i];
+				};
+
+				var getMessageWithClearButton = function (msg) {
+					msg = msg ? msg : 'Clear itself?';
+					msg += '<br /><br /><button type="button" class="btn clear">Yes</button>';
+					return msg;
+				};
+
+				$('#showtoast').click(function () {
+					var shortCutFunction = $("#toastTypeGroup input:radio:checked").val();
+					var msg = $('#message').val();
+					var title = $('#title').val() || '';
+					var $showDuration = $('#showDuration');
+					var $hideDuration = $('#hideDuration');
+					var $timeOut = $('#timeOut');
+					var $extendedTimeOut = $('#extendedTimeOut');
+					var $showEasing = $('#showEasing');
+					var $hideEasing = $('#hideEasing');
+					var $showMethod = $('#showMethod');
+					var $hideMethod = $('#hideMethod');
+					var toastIndex = toastCount++;
+					var addClear = $('#addClear').prop('checked');
+
+					toastr.options = {
+						closeButton: $('#closeButton').prop('checked'),
+						debug: $('#debugInfo').prop('checked'),
+						newestOnTop: $('#newestOnTop').prop('checked'),
+						progressBar: $('#progressBar').prop('checked'),
+						positionClass: $('#positionGroup input:radio:checked').val() || 'toast-top-right',
+						preventDuplicates: $('#preventDuplicates').prop('checked'),
+						onclick: null
+					};
+
+					if ($('#addBehaviorOnToastClick').prop('checked')) {
+						toastr.options.onclick = function () {
+							alert('You can perform some custom action after a toast goes away');
+						};
+					}
+
+					if ($showDuration.val().length) {
+						toastr.options.showDuration = $showDuration.val();
+					}
+
+					if ($hideDuration.val().length) {
+						toastr.options.hideDuration = $hideDuration.val();
+					}
+
+					if ($timeOut.val().length) {
+						toastr.options.timeOut = addClear ? 0 : $timeOut.val();
+					}
+
+					if ($extendedTimeOut.val().length) {
+						toastr.options.extendedTimeOut = addClear ? 0 : $extendedTimeOut.val();
+					}
+
+					if ($showEasing.val().length) {
+						toastr.options.showEasing = $showEasing.val();
+					}
+
+					if ($hideEasing.val().length) {
+						toastr.options.hideEasing = $hideEasing.val();
+					}
+
+					if ($showMethod.val().length) {
+						toastr.options.showMethod = $showMethod.val();
+					}
+
+					if ($hideMethod.val().length) {
+						toastr.options.hideMethod = $hideMethod.val();
+					}
+
+					if (addClear) {
+						msg = getMessageWithClearButton(msg);
+						toastr.options.tapToDismiss = false;
+					}
+					if (!msg) {
+						msg = getMessage();
+					}
+
+					$('#toastrOptions').text('Command: toastr["'
+									+ shortCutFunction
+									+ '"]("'
+									+ msg
+									+ (title ? '", "' + title : '')
+									+ '")\n\ntoastr.options = '
+									+ JSON.stringify(toastr.options, null, 2)
+					);
+
+					var $toast = toastr[shortCutFunction](msg, title); // Wire up an event handler to a button in the toast, if it exists
+					$toastlast = $toast;
+
+					if(typeof $toast === 'undefined'){
+						return;
+					}
+
+					if ($toast.find('#okBtn').length) {
+						$toast.delegate('#okBtn', 'click', function () {
+							alert('you clicked me. i was toast #' + toastIndex + '. goodbye!');
+							$toast.remove();
+						});
+					}
+					if ($toast.find('#surpriseBtn').length) {
+						$toast.delegate('#surpriseBtn', 'click', function () {
+							alert('Surprise! you clicked me. i was toast #' + toastIndex + '. You could perform an action here.');
+						});
+					}
+					if ($toast.find('.clear').length) {
+						$toast.delegate('.clear', 'click', function () {
+							toastr.clear($toast, { force: true });
+						});
+					}
+				});
+
+				function getLastToast(){
+					return $toastlast;
+				}
+				$('#clearlasttoast').click(function () {
+					toastr.clear(getLastToast());
+				});
+				$('#cleartoasts').click(function () {
+					toastr.clear();
+				});
+			})
+			
+			toastr.options = {
+				  "timeOut": "100000",
+				  "extendedTimeOut": "500000",
+				  "showDuration": "0",
+				  "hideDuration": "0"
+				}
+			toastr["info"]("Welcome to the meeple admin template :)", "Hello!");
 		</script>
 	
 	</body>

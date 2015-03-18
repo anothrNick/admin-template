@@ -104,15 +104,28 @@ body{
 
 /*
 Best looking:
--primary
+-blue
 -purple
 -alizarin
 -carrot
 -jungle
 -picton
 */
+[class*="-info"]{
+  background-color: #875F9A;
+}
+[class*="-success"] {
+  background-color: #26C281;
+}
+[class*="-warning"]{
+  background-color: #e67e22;
+}
+[class*="-error"] {
+  background-color: #e74c3c;
+}
 
 /* COLORS */
+[class*="-blue"]{ background-color: #428bca; color:#FFF;}
 [class*="-purple"]{ background-color: #875F9A; color:#FFF;}
 [class*="-picton"]{ background-color: #22A7F0; color:#FFF;}
 [class*="-jungle"]{ background-color: #26C281; color:#FFF;}
@@ -384,6 +397,29 @@ h1, h2, h3 {
 .footer-text{
 	margin: 0;
 	padding-top: 6px;
+}
+
+
+/* TOASTR NOTIFICATIONS */
+#toast-container{
+}
+
+#toast-container > div {
+	border-radius: 1px;
+	opacity: 0.9;
+	transition: box-shadow .1s ease-in-out;
+   -moz-transition: box-shadow .1s ease-in-out;
+   -webkit-transition: box-shadow .1s ease-in-out;
+}
+
+#toast-container > :hover {
+  -moz-box-shadow: 0 0 12px #777777;
+  -webkit-box-shadow: 0 0 12px #777777;
+  box-shadow: 0 0 12px #777777;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  filter: alpha(opacity=100);
+  cursor: pointer;
 }
 
 
