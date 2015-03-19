@@ -2,19 +2,11 @@
 <html lang="eng">
 	<head>
 		<title>Template</title>
-		<link rel="stylesheet" type="text/css" href="plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.1/css/bootstrap.min.css">
 		<link href="plugins/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href="plugins/toastr/toastr.css" rel="stylesheet" type="text/css">
-		
+		<link href="plugins/bootstrap3-dialog-master/bootstrap-dialog.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-
-		<script language="javascript" type="text/javascript" src="js/script.js"></script>
-		<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
-		<script language="javascript" type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
-		<!-- Metis Menu Plugin JavaScript -->
-		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
-		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
-
 	</head>
 	
 	<body>
@@ -59,7 +51,7 @@
 					
 					<li class="dropdown pull-right">
 						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false">
-							<span class="glyphicon glyphicon-user"></span>
+							<i class="fa fa-user"></i>
 							User
 						</a>
 						<ul class="dropdown-menu arrow arrow-right" role="menu">
@@ -75,20 +67,26 @@
             <div class="mpl-sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse collapse">
                     <ul class="nav" id="side-menu">
-                        <li>
-                            <a class="active nav-top" id="dashboard-nav" href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <li class="active">
+                            <a class="nav-top" id="dashboard-nav" href="#dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a class="nav-top" id="accounts-nav" href="#"><i class="fa fa-table fa-fw"></i> Menu Item</a>
+                            <a class="nav-top" id="accounts-nav" href="#buttons.html"><i class="fa fa-table fa-fw"></i> Buttons</a>
                         </li>
                         <li>
-                            <a class="nav-top" id="leads-nav" href="#"><i class="fa fa-comments-o fa-fw"></i> Menu Item</a>
+                            <a class="nav-top" id="leads-nav" href="#forms.html"><i class="fa fa-comments-o fa-fw"></i> Forms</a>
                         </li>
                         <li>
-                            <a class="nav-top" id="projects-nav" href="#"><i class="fa fa-gears fa-fw"></i> Menu Item</a>
+                            <a class="nav-top" id="projects-nav" href="#panels.html"><i class="fa fa-gears fa-fw"></i> Panels</a>
                         </li>
                         <li>
-                            <a class="nav-top" id="invoices-nav" href="#"><i class="fa fa-dollar fa-fw"></i> Menu Item</a>
+                            <a class="nav-top" id="invoices-nav" href="#notifications.html"><i class="fa fa-dollar fa-fw"></i> Notifications</a>
+                        </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="#modals.html"><i class="fa fa-send fa-fw"></i> Modals</a>
+                        </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="#tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
                         <li class="">
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> Menu Item <i class="fa arrow pull-right"></i></a>
@@ -114,18 +112,7 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li class="">
-                            <a href="#"><i class="fa fa-users fa-fw"></i> Menu Item<span class="fa arrow pull-right"></span></a>
-                            <ul class="nav nav-second-level collapse collapse-level" aria-expanded="false">
-                                <li>
-                                    <a href="#">Level 1 </a>
-                                </li>
-                                <li>
-                                    <a href="#">Level 1 </a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -134,97 +121,202 @@
         </nav>
 		<!-- Begin page content -->
 		<div id="content" class="">
-		
+			
 			<div class="row">
 				<div class="col-xs-12">
-				
-					<div class="panel">
-						<div class="panel-heading panel-underline"><h4 class="panel-title">Buttons</h4></div>
-
-						<div class="panel-body">
-							<h4>Meeple Buttons</h4>
-							<div class="row">
-								<div class="col-xs-12">
-									<button class="mpl-btn btn-blue">Button<span></span></button>
-									<button class="mpl-btn btn-purple">Button<span></span></button>
-									<button class="mpl-btn btn-picton"><span></span>Button</button>
-									<button class="mpl-btn btn-jungle"><span></span>Button</button>
-									<button class="mpl-btn btn-carrot"><span></span>Button</button>
-									<button class="mpl-btn btn-alizarin"><span></span>Button</button>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="page-header">
+								<p class="lead">Charts</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-body">
+									<div id="demo-flot-line" style="width:100%;height:250px"></div>
 								</div>
 							</div>
+						</div>
 						
-							<br/>
-							
-							<div class="row">
-								<div class="col-xs-12">
-								<div class="btn-group" role="group" aria-label="...">
-									<button class="mpl-btn btn-blue">Button<span></span></button>
-									<button class="mpl-btn btn-purple">Button<span></span></button>
-									<button class="mpl-btn btn-picton"><span></span>Button</button>
-									<button class="mpl-btn btn-jungle"><span></span>Button</button>
-									<button class="mpl-btn btn-carrot"><span></span>Button</button>
-									<button class="mpl-btn btn-alizarin"><span></span>Button</button>
-								</div>
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-body">
+									
 								</div>
 							</div>
-							
-							<br/>
-							
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="btn-group">
-										<button type="button" class="mpl-btn btn-purple dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											Action <span></span><span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-4">
+							<div class="panel">
+								<div class="panel-body">
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="panel">
+								<div class="panel-body">
+									
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4">
+							<div class="panel">
+								<div class="panel-body">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="page-header">
+								<p class="lead">Tables</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-body">
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-body">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="page-header">
+								<p class="lead">Buttons</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-heading panel-underline"><h4 class="panel-title">Meeple Buttons</h4></div>
+
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<button class="mpl-btn btn-blue">Button<span></span></button>
+											<button class="mpl-btn btn-purple">Button<span></span></button>
+											<button class="mpl-btn btn-picton"><span></span>Button</button>
+											<button class="mpl-btn btn-jungle"><span></span>Button</button>
+											<button class="mpl-btn btn-carrot"><span></span>Button</button>
+											<button class="mpl-btn btn-alizarin"><span></span>Button</button>
+										</div>
+									</div>
+								
+									<br/>
+									
+									<div class="row">
+										<div class="col-xs-12">
+										<div class="btn-group" role="group" aria-label="...">
+											<button class="mpl-btn btn-blue">Button<span></span></button>
+											<button class="mpl-btn btn-purple">Button<span></span></button>
+											<button class="mpl-btn btn-picton"><span></span>Button</button>
+											<button class="mpl-btn btn-jungle"><span></span>Button</button>
+											<button class="mpl-btn btn-carrot"><span></span>Button</button>
+											<button class="mpl-btn btn-alizarin"><span></span>Button</button>
+										</div>
+										</div>
 									</div>
 									
-									<div class="btn-group">
-										<button type="button" class="mpl-btn btn-picton dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-											Action <span></span><span class="caret"></span>
-										</button>
-										<ul class="dropdown-menu" role="menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li><a href="#">Something else here</a></li>
-											<li class="divider"></li>
-											<li><a href="#">Separated link</a></li>
-										</ul>
+									<br/>
+									
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="btn-group">
+												<button type="button" class="mpl-btn btn-purple dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+													Action <span></span><span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Something else here</a></li>
+													<li class="divider"></li>
+													<li><a href="#">Separated link</a></li>
+												</ul>
+											</div>
+											
+											<div class="btn-group">
+												<button type="button" class="mpl-btn btn-picton dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+													Action <span></span><span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li><a href="#">Action</a></li>
+													<li><a href="#">Another action</a></li>
+													<li><a href="#">Something else here</a></li>
+													<li class="divider"></li>
+													<li><a href="#">Separated link</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+									<br/>
+								
+									<div class="row">
+										<div class="col-xs-12">
+											<button class="mpl-btn btn-gamboge"><span></span>Button</button>
+											<button class="mpl-btn btn-turqoise"><span></span>Button</button>
+											<button class="mpl-btn btn-emerald"><span></span>Button</button>
+											<button class="mpl-btn btn-river"><span></span>Button</button>
+											<button class="mpl-btn btn-amethyst"><span></span>Button</button>
+											<button class="mpl-btn btn-asphalt"><span></span>Button</button>
+											<button class="mpl-btn btn-sunflower"><span></span>Button</button>
+											<button class="mpl-btn btn-clouds"><span></span>Button</button>
+											<button class="mpl-btn btn-white"><span></span>Button</button>
+										</div>
 									</div>
 								</div>
+								
 							</div>
-							
-							<br/>
+						</div>
 						
-							<div class="row">
-								<div class="col-xs-12">
-									<button class="mpl-btn btn-gamboge"><span></span>Button</button>
-									<button class="mpl-btn btn-turqoise"><span></span>Button</button>
-									<button class="mpl-btn btn-emerald"><span></span>Button</button>
-									<button class="mpl-btn btn-river"><span></span>Button</button>
-									<button class="mpl-btn btn-amethyst"><span></span>Button</button>
-									<button class="mpl-btn btn-asphalt"><span></span>Button</button>
-									<button class="mpl-btn btn-sunflower"><span></span>Button</button>
-									<button class="mpl-btn btn-clouds"><span></span>Button</button>
-								</div>
-							</div>
-							
-							<br/>
-							<h4>Bootstrap Buttons</h4>
-							<div class="row">
-								<div class="col-xs-12">
-									<button class="btn btn-default btn-xs">Button</button>
-									<button class="btn btn-success btn-sm">Button</button>
-									<button class="btn btn-primary">Button</button>
-									<button class="btn btn-danger btn-lg">Button</button>
-									<button class="btn btn-warning">Button</button>
+						<div class="col-md-6">
+							<div class="panel">
+								<div class="panel-heading panel-underline"><h4 class="panel-title">Bootstrap Buttons</h4></div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<button class="btn btn-default btn-xs">Button</button>
+											<button class="btn btn-success btn-sm">Button</button>
+											<button class="btn btn-primary">Button</button>
+											<button class="btn btn-danger btn-lg">Button</button>
+											<button class="btn btn-warning">Button</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -524,7 +616,7 @@
 				<div class="col-xs-12">
 				
 					<div class="panel">
-						<div class="panel-heading panel-underline"><h4 class="panel-title">Toastr</h4></div>
+						<div class="panel-heading panel-underline"><h4 class="panel-title">Toastr <small class="pull-right"><b>author:</b> <a href="https://github.com/CodeSeven/toastr">CodeSeven</a></small></h4></div>
 
 						<div class="panel-body">
 							<div class="row">
@@ -682,6 +774,81 @@
 				</div>
 			</div>
 			
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<p class="lead">Modals</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-md-6">
+				
+					<div class="panel">
+						<div class="panel-heading panel-underline"><h4 class="panel-title">BootstrapDialog <small class="pull-right"><b>author:</b> <a href="https://github.com/nakupanda/bootstrap3-dialog">nakupanda</a></small></h4></div>
+
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<button class="mpl-btn btn-blue" onclick="showBootModal('blue')">Show</button>
+									<button class="mpl-btn btn-purple" onclick="showBootModal('purple')">Show</button>
+									<button class="mpl-btn btn-picton" onclick="showBootModal('picton')">Show</button>
+									<button class="mpl-btn btn-jungle" onclick="showBootModal('jungle')">Show</button>
+									<button class="mpl-btn btn-carrot" onclick="showBootModal('carrot')">Show</button>
+									<button class="mpl-btn btn-alizarin" onclick="showBootModal('alizarin')">Show</button>
+								</div>
+							</div>
+							<br/>
+							<div class="row">
+								<div class="col-md-12">
+									<button class="mpl-btn btn-blue" onclick="showFullBootModal()">Show full modal with buttons and such</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="col-md-6">
+				
+					<div class="panel">
+						<div class="panel-heading panel-underline"><h4 class="panel-title">Bootstrap  <small class="pull-right"><a href="http://getbootstrap.com/javascript/#modals">docs</a></small></h4></div>
+
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<button type="button" class="mpl-btn btn-purple" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+									
+									<!-- Modal -->
+									<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+										  </div>
+										  <div class="modal-body">
+											...
+										  </div>
+										  <div class="modal-footer">
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn btn-primary">Save changes</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
 			<footer class="footer">
 				<div class="container">
 					<p class="footer-text text-muted">&copy; company 2015</p>
@@ -689,16 +856,129 @@
 			</footer>	
 		</div>
 		
+		<!-- SCRIPTS -->
+		<script language="javascript" type="text/javascript" src="js/script.js"></script>
+		
+		<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+		
+		<!-- Bootrap Dialog Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/bootstrap3-dialog-master/bootstrap-dialog.js"></script>
+		<!-- Flot Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
+		<!-- Metis Menu Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
+		<!-- Toastr Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
+		
+		<!-- METIS MENU -->
 		<script>
-		$(function() {
+			$(function() {
+				$('#side-menu').metisMenu();
+			});
+		</script>
+		
+		<!-- FLOT CHARTS -->
+		<script type="text/javascript">
+			var pageviews = [[1, 1700], [2, 1200], [3, 1090], [4, 1550], [5, 1700], [6, 1850], [7, 2736], [8, 3045], [9, 3779], [10, 4895], [11, 5209], [12, 5100]],
+	visitor = [[1, 456], [2, 589], [3, 354], [4, 558], [5, 254], [6, 656], [7, 124], [8, 523], [9, 256], [10, 987], [11, 854], [12, 965]];
 
-			$('#side-menu').metisMenu();
+	var plot = $.plot("#demo-flot-line", [
+			{
+				label: 'Dobwows',
+				data: pageviews,
+				lines: {
+					show: true,
+					lineWidth:2,
+					fill: true,
+					fillColor: {
+						colors: [{opacity: 0.5}, {opacity: 0.5}]
+					}
+				},
+				points: {
+					show: true,
+					radius: 3
+				}
+			},
+			{
+				label: 'Badoobies',
+				data: visitor,
+				lines: {
+					show: true,
+					lineWidth:2,
+					fill: true,
+					fillColor: {
+						colors: [{opacity: 0.5}, {opacity: 0.5}]
+					}
+				},
+				points: {
+					show: true,
+					radius: 3
+				}
+			}
+		],{
+		series: {
+			lines: {
+				show: true
+			},
+			points: {
+				show: true
+			},
+			shadowSize: 0	// Drawing is faster without shadows
+		},
+		colors: ['#22A7F0','#875F9A'],
+		legend: {
+			show: true,
+			position: 'nw',
+			margin: [15, 15]
+		},
+		grid: {
+			borderWidth: 0,
+			hoverable: true,
+			clickable: true
+		},
+		yaxis: {
+			ticks: 4, tickColor: '#eeeeee'
+		},
+		xaxis: {
+			ticks: 12,
+			tickColor: '#ffffff'
+		}
+	});
 
-		});
 
 		</script>
 		
+		<!-- TOASTR DEMO -->
 		<script type="text/javascript">
+			//bootstrap dialog/modal
+			function showBootModal(cls)
+			{
+				var dlg = new BootstrapDialog.show({
+						type: 'mpl-dialog-'+cls,
+						title: 'This is a title',
+						message: 'With a message',
+						cssClass: 'text-center',
+						closable: true
+					});
+			}
+			
+			function showFullBootModal()
+			{
+				BootstrapDialog.show({
+					type: 'type-default',
+					title: 'Changing dialog type',
+					message: 'Click buttons below...',
+					buttons: [{
+						label: "A button",
+						cssClass: 'btn-default btn-sm',
+						action: function(dialogItself){
+							dialogItself.close();
+						}
+					}]
+				});
+			}
+					
 			// toastr demo
 			$(function () {
 				var i = -1;
@@ -843,8 +1123,9 @@
 			})
 			
 			toastr.options = {
-				  "timeOut": "100000",
-				  "extendedTimeOut": "500000",
+				  "progressBar": true,
+				  "timeOut": "5000",
+				  "extendedTimeOut": "1000",
 				  "showDuration": "0",
 				  "hideDuration": "0"
 				}

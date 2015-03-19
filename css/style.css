@@ -37,7 +37,7 @@ body{
 	color: #FFF;
 	position: relative;
 	
-	border-bottom: 3px solid rgba(0,0,0,.1);
+	border-bottom: 2px solid rgba(0,0,0,.1);
 }
 .mpl-btn.btn-xs{
 	padding: 1px 5px;
@@ -72,10 +72,14 @@ body{
 }
 .mpl-btn:hover{
 	border: 1px solid rgba(255,255,255,.1);
-	border-bottom: 3px solid rgba(0,0,0,.05);
+	border-bottom: 2px solid rgba(0,0,0,.05);
+	outline:0;
+}
+.mpl-btn:focus{
+	outline:0;
 }
 .mpl-btn:active{
-	border-bottom: 2px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
 	margin-top: 1px;
 }
 .mpl-btn:hover>span:first-child{
@@ -139,7 +143,24 @@ Best looking:
 [class*="-carrot"]{ background-color: #e67e22; color:#FFF;}
 [class*="-alizarin"]{ background-color: #e74c3c; color:#FFF;}
 [class*="-clouds"]{ background-color: #ecf0f1;color:#515151 }
+[class*="-white"]{ background-color: #fff;color:#515151 }
 
+[class*="mpl-dialog"] .modal-content{
+	border-radius: 1px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4) !important;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4) !important;
+	border: none;
+}
+[class*="mpl-dialog"]{padding-right: 0px;background-color: transparent;}
+[class*="mpl-dialog"] .modal-header{border-bottom: none;}
+[class*="mpl-dialog"] .modal-footer{border-top: none;}
+
+[class*="dialog-blue"] .modal-dialog .modal-content { background-color: #428bca; color:#FFF;}
+[class*="dialog-purple"] .modal-dialog .modal-content { background-color: #875F9A; color:#FFF;}
+[class*="dialog-picton"] .modal-dialog .modal-content { background-color: #22A7F0; color:#FFF;}
+[class*="dialog-jungle"] .modal-dialog .modal-content { background-color: #26C281; color:#FFF;}
+[class*="dialog-carrot"] .modal-dialog .modal-content { background-color: #e67e22; color:#FFF;}
+[class*="dialog-alizarin"] .modal-dialog .modal-content { background-color: #e74c3c; color:#FFF;}
 
 /* HEADER */
 #main-nav{
@@ -188,6 +209,7 @@ Best looking:
    -webkit-transition: all .1s ease-in-out;
 }
 .mpl-sidebar .sidebar-nav>ul>li.active>a{
+	background-color: #f9f9f9;
 	background-color: #f9f9f9;
 	box-shadow: inset 4px 0 0 #875F9A;
 }
