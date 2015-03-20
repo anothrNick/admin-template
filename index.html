@@ -2,10 +2,17 @@
 <html lang="eng">
 	<head>
 		<title>Template</title>
+		
 		<link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.1/css/bootstrap.min.css">
+		
 		<link href="plugins/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		
 		<link href="plugins/toastr/toastr.css" rel="stylesheet" type="text/css">
+		
 		<link href="plugins/bootstrap3-dialog-master/bootstrap-dialog.css" rel="stylesheet" type="text/css">
+		
+		<link href="plugins/morris/morris.css" rel="stylesheet" type="text/css">
+		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
@@ -133,25 +140,94 @@
 					</div>
 					
 					<div class="row">
+						
 						<div class="col-md-6">
 							<div class="panel">
 								<div class="panel-body">
-									<div id="demo-flot-line" style="width:100%;height:250px"></div>
+									<div id="demo-flot-line" style="width:100%;height:200px"></div>
 								</div>
 							</div>
 						</div>
 						
 						<div class="col-md-6">
-							<div class="panel">
-								<div class="panel-body">
-									
+							<div class="row">
+								<div class="col-md-4">
+									<div class="panel bg-picton">
+										<div class="panel-body">
+											<span id="sparkline1"></span>
+										</div>
+										<div class="panel-footer">
+											<div class="row">
+												<div class="col-xs-5 text-left">
+													Avg Sales<br/>
+													<small>per day</small>
+												</div>
+												<div class="col-xs-6 text-left" style="font-size:30px;">
+													654
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="panel bg-purple">
+										<div class="panel-heading">
+											<h4 class="panel-title text-center">Views</h4>
+										</div>
+										<div class="panel-body">
+											<span id="sparkline2"></span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="panel">
+										<div class="panel-heading">
+											<h4 class="panel-title text-center">Activity</h4>
+										</div>
+										<div class="panel-body">
+											<span class="sparkline3"></span>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="panel">
+										<div class="panel-body">
+											
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="panel">
+										<div class="panel-body">
+											<span class="text-lg">
+												Avg Views<br/>
+												<small>per day</small>
+											</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-4">
+									<div class="panel">
+										<div class="panel-body">
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						
+						
 					</div>
 					
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="panel">
 								<div class="panel-body">
 								
@@ -159,18 +235,18 @@
 							</div>
 						</div>
 						
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<div class="panel">
 								<div class="panel-body">
-									
+									<div id="demo-morris-pie1" style="width:100%;height:200px"></div>
 								</div>
 							</div>
 						</div>
 						
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<div class="panel">
 								<div class="panel-body">
-									
+									<div id="demo-morris-pie2" style="width:100%;height:200px"></div>
 								</div>
 							</div>
 						</div>
@@ -859,19 +935,34 @@
 		<!-- SCRIPTS -->
 		<script language="javascript" type="text/javascript" src="js/script.js"></script>
 		
-		<script language="javascript" type="text/javascript" src="js/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/bootstrap-3.3.1/js/bootstrap.min.js"></script>
 		
 		<!-- Bootrap Dialog Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/bootstrap3-dialog-master/bootstrap-dialog.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/bootstrapdialog_demo.js"></script>
+		
 		<!-- Flot Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
-		<!-- Metis Menu Plugin JavaScript -->
-		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.pie.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/flot_demo.js"></script>
+		
+		<!-- Morris Plugin Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/morris/morris.min.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/morris_demo.js"></script>
+		
+		<!-- Sparkline Plugin Javascript -->
+		<script language="javascript" type="text/javascript" src="plugins/sparkline/jquery.sparkline.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/sparkline_demo.js"></script>
+		
 		<!-- Toastr Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/toastr_demo.js"></script>
 		
-		<!-- METIS MENU -->
+		<!-- Metis Menu Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
 		<script>
 			$(function() {
 				$('#side-menu').metisMenu();
@@ -880,256 +971,16 @@
 		
 		<!-- FLOT CHARTS -->
 		<script type="text/javascript">
-			var pageviews = [[1, 1700], [2, 1200], [3, 1090], [4, 1550], [5, 1700], [6, 1850], [7, 2736], [8, 3045], [9, 3779], [10, 4895], [11, 5209], [12, 5100]],
-	visitor = [[1, 456], [2, 589], [3, 354], [4, 558], [5, 254], [6, 656], [7, 124], [8, 523], [9, 256], [10, 987], [11, 854], [12, 965]];
-
-	var plot = $.plot("#demo-flot-line", [
-			{
-				label: 'Dobwows',
-				data: pageviews,
-				lines: {
-					show: true,
-					lineWidth:2,
-					fill: true,
-					fillColor: {
-						colors: [{opacity: 0.5}, {opacity: 0.5}]
-					}
-				},
-				points: {
-					show: true,
-					radius: 3
-				}
-			},
-			{
-				label: 'Badoobies',
-				data: visitor,
-				lines: {
-					show: true,
-					lineWidth:2,
-					fill: true,
-					fillColor: {
-						colors: [{opacity: 0.5}, {opacity: 0.5}]
-					}
-				},
-				points: {
-					show: true,
-					radius: 3
-				}
-			}
-		],{
-		series: {
-			lines: {
-				show: true
-			},
-			points: {
-				show: true
-			},
-			shadowSize: 0	// Drawing is faster without shadows
-		},
-		colors: ['#22A7F0','#875F9A'],
-		legend: {
-			show: true,
-			position: 'nw',
-			margin: [15, 15]
-		},
-		grid: {
-			borderWidth: 0,
-			hoverable: true,
-			clickable: true
-		},
-		yaxis: {
-			ticks: 4, tickColor: '#eeeeee'
-		},
-		xaxis: {
-			ticks: 12,
-			tickColor: '#ffffff'
-		}
-	});
+			
 
 
 		</script>
 		
 		<!-- TOASTR DEMO -->
 		<script type="text/javascript">
-			//bootstrap dialog/modal
-			function showBootModal(cls)
-			{
-				var dlg = new BootstrapDialog.show({
-						type: 'mpl-dialog-'+cls,
-						title: 'This is a title',
-						message: 'With a message',
-						cssClass: 'text-center',
-						closable: true
-					});
-			}
 			
-			function showFullBootModal()
-			{
-				BootstrapDialog.show({
-					type: 'type-default',
-					title: 'Changing dialog type',
-					message: 'Click buttons below...',
-					buttons: [{
-						label: "A button",
-						cssClass: 'btn-default btn-sm',
-						action: function(dialogItself){
-							dialogItself.close();
-						}
-					}]
-				});
-			}
 					
-			// toastr demo
-			$(function () {
-				var i = -1;
-				var toastCount = 0;
-				var $toastlast;
-
-				var getMessage = function () {
-					var msgs = ['Success! Something happened.',
-						'Error. There was a problem doing something',
-						'New notification',
-						'New Message',
-						'New hablah'
-					];
-					i++;
-					if (i === msgs.length) {
-						i = 0;
-					}
-
-					return msgs[i];
-				};
-
-				var getMessageWithClearButton = function (msg) {
-					msg = msg ? msg : 'Clear itself?';
-					msg += '<br /><br /><button type="button" class="btn clear">Yes</button>';
-					return msg;
-				};
-
-				$('#showtoast').click(function () {
-					var shortCutFunction = $("#toastTypeGroup input:radio:checked").val();
-					var msg = $('#message').val();
-					var title = $('#title').val() || '';
-					var $showDuration = $('#showDuration');
-					var $hideDuration = $('#hideDuration');
-					var $timeOut = $('#timeOut');
-					var $extendedTimeOut = $('#extendedTimeOut');
-					var $showEasing = $('#showEasing');
-					var $hideEasing = $('#hideEasing');
-					var $showMethod = $('#showMethod');
-					var $hideMethod = $('#hideMethod');
-					var toastIndex = toastCount++;
-					var addClear = $('#addClear').prop('checked');
-
-					toastr.options = {
-						closeButton: $('#closeButton').prop('checked'),
-						debug: $('#debugInfo').prop('checked'),
-						newestOnTop: $('#newestOnTop').prop('checked'),
-						progressBar: $('#progressBar').prop('checked'),
-						positionClass: $('#positionGroup input:radio:checked').val() || 'toast-top-right',
-						preventDuplicates: $('#preventDuplicates').prop('checked'),
-						onclick: null
-					};
-
-					if ($('#addBehaviorOnToastClick').prop('checked')) {
-						toastr.options.onclick = function () {
-							alert('You can perform some custom action after a toast goes away');
-						};
-					}
-
-					if ($showDuration.val().length) {
-						toastr.options.showDuration = $showDuration.val();
-					}
-
-					if ($hideDuration.val().length) {
-						toastr.options.hideDuration = $hideDuration.val();
-					}
-
-					if ($timeOut.val().length) {
-						toastr.options.timeOut = addClear ? 0 : $timeOut.val();
-					}
-
-					if ($extendedTimeOut.val().length) {
-						toastr.options.extendedTimeOut = addClear ? 0 : $extendedTimeOut.val();
-					}
-
-					if ($showEasing.val().length) {
-						toastr.options.showEasing = $showEasing.val();
-					}
-
-					if ($hideEasing.val().length) {
-						toastr.options.hideEasing = $hideEasing.val();
-					}
-
-					if ($showMethod.val().length) {
-						toastr.options.showMethod = $showMethod.val();
-					}
-
-					if ($hideMethod.val().length) {
-						toastr.options.hideMethod = $hideMethod.val();
-					}
-
-					if (addClear) {
-						msg = getMessageWithClearButton(msg);
-						toastr.options.tapToDismiss = false;
-					}
-					if (!msg) {
-						msg = getMessage();
-					}
-
-					$('#toastrOptions').text('Command: toastr["'
-									+ shortCutFunction
-									+ '"]("'
-									+ msg
-									+ (title ? '", "' + title : '')
-									+ '")\n\ntoastr.options = '
-									+ JSON.stringify(toastr.options, null, 2)
-					);
-
-					var $toast = toastr[shortCutFunction](msg, title); // Wire up an event handler to a button in the toast, if it exists
-					$toastlast = $toast;
-
-					if(typeof $toast === 'undefined'){
-						return;
-					}
-
-					if ($toast.find('#okBtn').length) {
-						$toast.delegate('#okBtn', 'click', function () {
-							alert('you clicked me. i was toast #' + toastIndex + '. goodbye!');
-							$toast.remove();
-						});
-					}
-					if ($toast.find('#surpriseBtn').length) {
-						$toast.delegate('#surpriseBtn', 'click', function () {
-							alert('Surprise! you clicked me. i was toast #' + toastIndex + '. You could perform an action here.');
-						});
-					}
-					if ($toast.find('.clear').length) {
-						$toast.delegate('.clear', 'click', function () {
-							toastr.clear($toast, { force: true });
-						});
-					}
-				});
-
-				function getLastToast(){
-					return $toastlast;
-				}
-				$('#clearlasttoast').click(function () {
-					toastr.clear(getLastToast());
-				});
-				$('#cleartoasts').click(function () {
-					toastr.clear();
-				});
-			})
 			
-			toastr.options = {
-				  "progressBar": true,
-				  "timeOut": "5000",
-				  "extendedTimeOut": "1000",
-				  "showDuration": "0",
-				  "hideDuration": "0"
-				}
-			toastr["info"]("Welcome to the meeple admin template :)", "Hello!");
 		</script>
 	
 	</body>
