@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<title>Admin Template</title>
+		
+		<link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.1/css/bootstrap.min.css">
+		
+		<!--<link href="plugins/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		
+		<link href="plugins/toastr/toastr.css" rel="stylesheet" type="text/css">
+		
+		<link href="plugins/bootstrap3-dialog-master/bootstrap-dialog.css" rel="stylesheet" type="text/css">
+		
+		<link href="plugins/morris/morris.css" rel="stylesheet" type="text/css">
+		
+		<link href="plugins/animate/animate.min.css" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	
+	<body>
+	
+		<!-- Fixed navbar -->
+		<nav id="main-nav" class="navbar navbar-light navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div id="nav-wrap">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">Project Name</a>
+                </div>
+                <!-- /.navbar-header -->
+		
+				<ul class="nav mpl-links navbar-nav-light">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope"></i></a>
+						<ul class="dropdown-menu arrow" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-bell"></i></a>
+						<ul class="dropdown-menu arrow" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+					
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false">
+							<i class="fa fa-user"></i>
+							User
+						</a>
+						<ul class="dropdown-menu arrow arrow-right" role="menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Settings</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+		
+            </div>
+            <div class="mpl-sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="accounts-nav" href="buttons.html"><i class="fa fa-table fa-fw"></i> Buttons</a>
+                        </li>
+						<li>
+                            <a class="nav-top" id="" href="charts.html"><i class="fa fa-pie-chart fa-fw"></i> Charts</a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="leads-nav" href="forms.html"><i class="fa fa-comments-o fa-fw"></i> Forms</a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> Panels</a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> Notifications</a>
+                        </li>
+						<li class="active">
+                            <a class="nav-top" id="invoices-nav" href="modals.html"><i class="fa fa-send fa-fw"></i> Modals</a>
+                        </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                        </li>
+                        <li class="">
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Menu Item <i class="fa arrow pull-right"></i></a>
+                            <ul class="nav nav-second-level collapse collapse-level" aria-expanded="false">
+                                <li>
+                                    <a href="#">Level 1 <span class="fa arrow pull-right"></span></a>
+                                    <ul class="nav nav-third-level collapse">
+                                        <li>
+                                            <a href="#">Level 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Level 2</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                                <li>
+                                    <a href="#">Level 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Level 1</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+		<!-- Begin page content -->
+		<div id="content" class="animated fadeIn">
+			<div id="inner-content" class="animated fadeIn">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="page-header">
+							<p class="lead">Modals</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-md-6">
+					
+						<div class="panel">
+							<div class="panel-heading panel-underline"><h4 class="panel-title">BootstrapDialog <small class="pull-right"><b>author:</b> <a href="https://github.com/nakupanda/bootstrap3-dialog">nakupanda</a></small></h4></div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<button class="mpl-btn btn-blue" onclick="showBootModal('blue')">Show</button>
+										<button class="mpl-btn btn-purple" onclick="showBootModal('purple')">Show</button>
+										<button class="mpl-btn btn-picton" onclick="showBootModal('picton')">Show</button>
+										<button class="mpl-btn btn-jungle" onclick="showBootModal('jungle')">Show</button>
+										<button class="mpl-btn btn-carrot" onclick="showBootModal('carrot')">Show</button>
+										<button class="mpl-btn btn-alizarin" onclick="showBootModal('alizarin')">Show</button>
+									</div>
+								</div>
+								<br/>
+								<div class="row">
+									<div class="col-md-12">
+										<button class="mpl-btn btn-blue" onclick="showFullBootModal()">Show full modal with buttons and such</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="col-md-6">
+					
+						<div class="panel">
+							<div class="panel-heading panel-underline"><h4 class="panel-title">Bootstrap  <small class="pull-right"><a href="http://getbootstrap.com/javascript/#modals">docs</a></small></h4></div>
+
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<button type="button" class="mpl-btn btn-purple" data-toggle="modal" data-target="#myModal">Launch demo modal</button>
+										
+										<!-- Modal -->
+										<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										  <div class="modal-dialog">
+											<div class="modal-content">
+											  <div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+											  </div>
+											  <div class="modal-body">
+												...
+											  </div>
+											  <div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Save changes</button>
+											  </div>
+											</div>
+										  </div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container">
+					<p class="footer-text text-muted">&copy; company 2015</p>
+				</div>
+			</footer>	
+		</div>
+		
+		<!-- SCRIPTS -->
+		<script language="javascript" type="text/javascript" src="js/script.js"></script>
+		
+		<script language="javascript" type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+		
+		<!-- Bootrap Dialog Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/bootstrap3-dialog-master/bootstrap-dialog.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/bootstrapdialog_demo.js"></script>
+		
+		<!-- Flot Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.pie.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/flot_demo.js"></script>
+		
+		<!-- Morris Plugin Javascript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/morris/morris.min.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/morris_demo.js"></script>
+		
+		<!-- Sparkline Plugin Javascript -->
+		<script language="javascript" type="text/javascript" src="plugins/sparkline/jquery.sparkline.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/sparkline_demo.js"></script>
+		
+		<!-- Toastr Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
+		<script language="javascript" type="text/javascript" src="demo/toastr_demo.js"></script>
+		
+		<!-- Metis Menu Plugin JavaScript -->
+		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
+		<script>
+			$(function() {
+				$('#side-menu').metisMenu();
+			});
+		</script>
+		
+		<!-- init stuff -->
+		<script type="text/javascript">
+			
+		</script>
+	
+	</body>
+	
+</html>
