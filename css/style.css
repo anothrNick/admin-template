@@ -291,6 +291,33 @@ svg {width:100%;}
 	content: "\f107";
 }
 
+/* FLYOUT */
+.minimize .flyout:hover>.collapse-level{
+	position: absolute;
+	display: inline-block;
+	visibility: visible;
+	width: 200px;
+	left: 50px;
+	top: 0px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+	height: auto !important;
+}
+
+.minimize .flyout.active>.collapse-level{
+	position: absolute;
+	display: inline-block;
+	visibility: visible;
+	width: 200px;
+	left: 50px;
+	top: 0px;
+	border: 1px solid #ccc;
+}
+
+.minimize .flyout.active{
+	background-color: #f9f9f9;
+}
+
 /* NAV LINKS */
 .mpl-links {
     margin-right: 0;
