@@ -23,7 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
-	<body>
+	<body class="minimize">
 	
 		<!-- Fixed navbar -->
 		<nav id="main-nav" class="navbar navbar-light navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -38,6 +38,7 @@
                 <!-- /.navbar-header -->
 		
 				<ul class="nav mpl-links navbar-nav-light">
+					<li><a href="javascript:void(0);" onclick="$('body').toggleClass('minimize')"><i class="fa fa-bars"></i></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope"></i></a>
 						<ul class="dropdown-menu arrow" role="menu">
@@ -82,31 +83,31 @@
                 <div class="sidebar-nav navbar-collapse collapse">
                     <ul class="nav" id="side-menu">
                         <li class="active">
-                            <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> <span class="mpl-sidebar-text">Dashboard</span></a>
                         </li>
                         <li>
-                            <a class="nav-top" id="accounts-nav" href="buttons.html"><i class="fa fa-table fa-fw"></i> Buttons</a>
+                            <a class="nav-top" id="accounts-nav" href="buttons.html"><i class="fa fa-table fa-fw"></i> <span class="mpl-sidebar-text">Buttons</span></a>
                         </li>
 						<li>
-                            <a class="nav-top" id="" href="charts.html"><i class="fa fa-pie-chart fa-fw"></i> Charts</a>
+                            <a class="nav-top" id="" href="charts.html"><i class="fa fa-pie-chart fa-fw"></i> <span class="mpl-sidebar-text">Charts</span></a>
                         </li>
                         <li>
-                            <a class="nav-top" id="leads-nav" href="forms.html"><i class="fa fa-comments-o fa-fw"></i> Forms</a>
+                            <a class="nav-top" id="leads-nav" href="forms.html"><i class="fa fa-comments-o fa-fw"></i> <span class="mpl-sidebar-text">Forms</span></a>
                         </li>
                         <li>
-                            <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> Panels</a>
+                            <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> <span class="mpl-sidebar-text">Panels</span></a>
                         </li>
                         <li>
-                            <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> Notifications</a>
+                            <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> <span class="mpl-sidebar-text">Notifications</span></a>
                         </li>
 						<li>
-                            <a class="nav-top" id="invoices-nav" href="modals.html"><i class="fa fa-send fa-fw"></i> Modals</a>
+                            <a class="nav-top" id="invoices-nav" href="modals.html"><i class="fa fa-send fa-fw"></i> <span class="mpl-sidebar-text">Modals</span></a>
                         </li>
 						<li>
-                            <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> <span class="mpl-sidebar-text">Tables</span></a>
                         </li>
                         <li class="">
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Menu Item <i class="fa arrow pull-right"></i></a>
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="mpl-sidebar-text">Menu Item</span> <i class="hide-min fa arrow pull-right"></i></a>
                             <ul class="nav nav-second-level collapse collapse-level" aria-expanded="false">
                                 <li>
                                     <a href="#">Level 1 <span class="fa arrow pull-right"></span></a>
@@ -1020,6 +1021,7 @@
 		<!-- Flot Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.pie.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.resize.js"></script>
 		<script language="javascript" type="text/javascript" src="demo/flot_demo.js"></script>
 		
 		<!-- Morris Plugin Javascript -->
