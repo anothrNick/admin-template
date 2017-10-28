@@ -28,7 +28,7 @@ visitor = [[1, 456], [2, 589], [3, 354], [4, 558], [5, 254], [6, 656], [7, 124],
 
 var plot = $.plot("#demo-flot-line", [
 		{
-			label: 'Dobwows',
+			label: 'Up',
 			data: pageviews,
 			lines: {
 				show: true,
@@ -44,7 +44,7 @@ var plot = $.plot("#demo-flot-line", [
 			}
 		},
 		{
-			label: 'Badoobies',
+			label: 'To the right',
 			data: visitor,
 			lines: {
 				show: true,
