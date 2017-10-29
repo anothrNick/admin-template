@@ -301,7 +301,6 @@ svg {width:100%;}
 	transition: width .1s ease-in-out;
    -moz-transition: width .1s ease-in-out;
    -webkit-transition: width .1s ease-in-out;
-   overflow: hidden;
 }
 
 .mpl-sidebar .navbar-collapse{
