@@ -23,7 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
-	<body class="minimize">
+	<body class="">
 	
 		<!-- Fixed navbar -->
 		<nav id="main-nav" class="navbar navbar-dark navbar-static-top" role="navigation" style="margin-bottom: 0">
@@ -82,6 +82,9 @@
             <div class="mpl-sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse collapse">
                     <ul class="nav" id="side-menu">
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">Main Navigation</span>
+                        </li>
                         <li class="active">
                             <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> <span class="mpl-sidebar-text">Dashboard</span></a>
                         </li>
@@ -97,6 +100,9 @@
                         <li>
                             <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> <span class="mpl-sidebar-text">Panels</span></a>
                         </li>
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">Other</span>
+                        </li>
                         <li>
                             <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> <span class="mpl-sidebar-text">Notifications</span></a>
                         </li>
@@ -105,6 +111,11 @@
                         </li>
 						<li>
                             <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> <span class="mpl-sidebar-text">Tables</span></a>
+                        </li>
+
+
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">More</span>
                         </li>
                         <li class="flyout">
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="mpl-sidebar-text">Menu Item</span> <i class="hide-min fa arrow pull-right"></i></a>
@@ -130,6 +141,9 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="blank.html"><i class="fa fa-square-o fa-fw"></i> <span class="mpl-sidebar-text">Blank</span></a>
+                        </li>
                         
                     </ul>
                 </div>
@@ -139,7 +153,11 @@
         </nav>
 		<!-- Begin page content -->
 		<div id="content" class="animated fadeIn">
-			<div id="inner-content" class="animated fadeIn">
+			<header>
+				<h2>Dashboard</h2>
+				<p>Demo dashboard page</p>
+			</header>
+			<div id="inner-content">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="row">
@@ -152,185 +170,22 @@
 						
 						<div class="row">
 							
-							<div class="col-md-6">
+							<div class="col-md-9">
 								<div class="panel">
 									<div class="panel-body">
-										<div id="demo-flot-line" style="width:100%;height:200px"></div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-6">
-								<div class="row">
-								
-									<div class="col-md-4">
-										<div class="panel bg-jungle">
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Views</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline2"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Views<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														46
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-								
-									<div class="col-md-4">
-										<div class="panel bg-picton">
-								
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Sales</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline1"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Sales<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														64
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									<div class="col-md-4">
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Activity</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline3"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Views<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														46
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-							
-							
-						</div>
-						
-						<div class="row">
-							<div class="col-md-3">
-								<div class="panel">
-									<div class="panel-body">
-										<div id="demo-morris-pie1" style="width:100%;height:200px"></div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-3">
-								<div class="panel">
-									<div class="panel-body">
-										<div id="demo-morris-pie2" style="width:100%;height:200px"></div>
-									</div>
-								</div>
-							</div>
-						
-							<div class="col-md-6">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="panel bg-purple">
-								
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Sales</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline1"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Sales<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														64
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									<div class="col-md-4">
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Views</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline4"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Views<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														46
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									
-									<div class="col-md-4">
-										<div class="panel">
-											<div class="panel-heading">
-												<h4 class="panel-title text-center">Activity</h4>
-											</div>
-											<div class="panel-body">
-												<span class="sparkline3"></span>
-											</div>
-											<div class="panel-footer">
-												<div class="row">
-													<div class="col-xs-5 text-left">
-														Avg Views<br/>
-														<small>per day</small>
-													</div>
-													<div class="col-xs-6 text-left" style="font-size:30px;">
-														46
-													</div>
-												</div>
-											</div>
-										</div>
+										<div id="demo-flot-line" style="width:100%;height:250px"></div>
 									</div>
 								</div>
 							</div>
 							
 						</div>
+						
+						
 					
 					</div>
 				</div>
 				
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-xs-12">
 						<div class="row">
 							<div class="col-xs-12">
@@ -359,7 +214,7 @@
 						</div>
 					
 					</div>
-				</div>
+				</div> -->
 				
 				<div class="row">
 					<div class="col-xs-12">
@@ -648,25 +503,6 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-3">
-								<div class="panel panel-primary">
-									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
-									<div class="panel-body">
-										Panel content
-									</div>
-									<div class="panel-footer">Panel footer</div>
-								</div>
-							</div>
-							
-							<div class="col-md-3">
-								<div class="panel panel-custom">
-									<div class="panel-heading panel-jungle"><h4 class="panel-title">Panel heading with title</h4></div>
-									<div class="panel-body">
-										Panel content
-									</div>
-									<div class="panel-footer">Panel footer</div>
-								</div>
-							</div>
 							
 							<div class="col-md-3">
 								<div class="panel">
@@ -679,18 +515,40 @@
 							</div>
 							
 							<div class="col-md-3">
-								<div class="panel">
-									<div class="panel-heading panel-underline"><h4 class="panel-title">Panel heading with title and underline</h4></div>
+								<div class="panel panel-blue">
+									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
 									<div class="panel-body">
 										Panel content
 									</div>
+									<div class="panel-footer">Panel footer</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="panel panel-purple">
+									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
+									<div class="panel-body">
+										Panel content
+									</div>
+									<div class="panel-footer">Panel footer</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="panel panel-jungle">
+									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
+									<div class="panel-body">
+										Panel content
+									</div>
+									<div class="panel-footer">Panel footer</div>
 								</div>
 							</div>
 						</div>
 						
 						<div class="row">
+							
 							<div class="col-md-3">
-								<div class="panel bg-primary">
+								<div class="panel panel-alizarin">
 									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
 									<div class="panel-body">
 										Panel content
@@ -699,25 +557,7 @@
 							</div>
 							
 							<div class="col-md-3">
-								<div class="panel bg-purple">
-									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
-									<div class="panel-body">
-										Panel content
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-3">
-								<div class="panel bg-alizarin">
-									<div class="panel-heading"><h4 class="panel-title">Panel heading with title</h4></div>
-									<div class="panel-body">
-										Panel content
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-3">
-								<div class="panel bg-carrot">
+								<div class="panel panel-carrot">
 									<div class="panel-heading">
 										<h4 class="panel-title">Panel heading with title</h4>
 									</div>
@@ -728,7 +568,7 @@
 							</div>
 							
 							<div class="col-md-3">
-								<div class="panel bg-jungle">
+								<div class="panel panel-river">
 									<div class="panel-heading">
 										<h4 class="panel-title">Panel heading with title</h4>
 									</div>
@@ -739,7 +579,7 @@
 							</div>
 							
 							<div class="col-md-3">
-								<div class="panel bg-picton">
+								<div class="panel panel-asphalt">
 									<div class="panel-heading">
 										<h4 class="panel-title">Panel heading with title</h4>
 									</div>
@@ -1001,8 +841,8 @@
 				</div>
 			</div>
 			<footer class="footer">
-				<div class="container">
-					<p class="footer-text text-muted">&copy; company 2015</p>
+				<div>
+					<p class="footer-text">&copy; company 2015</p>
 				</div>
 			</footer>	
 		</div>

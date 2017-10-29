@@ -69,7 +69,7 @@ var plot = $.plot("#demo-flot-line", [
 		},
 		shadowSize: 0	// Drawing is faster without shadows
 	},
-	colors: ['#22A7F0','#875F9A'],
+	colors: ['#16a085','#34495e'],
 	legend: {
 		show: true,
 		position: 'nw',
