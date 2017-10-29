@@ -23,10 +23,10 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	
-	<body>
+	<body class="">
 	
 		<!-- Fixed navbar -->
-		<nav id="main-nav" class="navbar navbar-light navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<nav id="main-nav" class="navbar navbar-dark navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div id="nav-wrap">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,7 +37,8 @@
                 </div>
                 <!-- /.navbar-header -->
 		
-				<ul class="nav mpl-links navbar-nav-light">
+				<ul class="nav mpl-links navbar-nav-dark">
+					<li><a href="javascript:void(0);" onclick="$('body').toggleClass('minimize')"><i class="fa fa-bars"></i></a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle main-nav-dropdown" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-envelope"></i></a>
 						<ul class="dropdown-menu arrow" role="menu">
@@ -81,32 +82,42 @@
             <div class="mpl-sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse collapse">
                     <ul class="nav" id="side-menu">
-						<li>
-                            <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">Main Navigation</span>
                         </li>
                         <li>
-                            <a class="nav-top" id="accounts-nav" href="buttons.html"><i class="fa fa-table fa-fw"></i> Buttons</a>
-                        </li>
-						<li>
-                            <a class="nav-top" id="" href="charts.html"><i class="fa fa-pie-chart fa-fw"></i> Charts</a>
+                            <a class="nav-top" id="dashboard-nav" href="index.html"><i class="fa fa-dashboard fa-fw"></i> <span class="mpl-sidebar-text">Dashboard</span></a>
                         </li>
                         <li>
-                            <a class="nav-top" id="leads-nav" href="forms.html"><i class="fa fa-comments-o fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> Panels</a>
-                        </li>
-                        <li>
-                            <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> Notifications</a>
+                            <a class="nav-top" id="accounts-nav" href="buttons.html"><i class="fa fa-table fa-fw"></i> <span class="mpl-sidebar-text">Buttons</span></a>
                         </li>
 						<li>
-                            <a class="nav-top" id="invoices-nav" href="modals.html"><i class="fa fa-send fa-fw"></i> Modals</a>
+                            <a class="nav-top" id="" href="charts.html"><i class="fa fa-pie-chart fa-fw"></i> <span class="mpl-sidebar-text">Charts</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="leads-nav" href="forms.html"><i class="fa fa-comments-o fa-fw"></i> <span class="mpl-sidebar-text">Forms</span></a>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="projects-nav" href="panels.html"><i class="fa fa-gears fa-fw"></i> <span class="mpl-sidebar-text">Panels</span></a>
+                        </li>
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">Other</span>
+                        </li>
+                        <li>
+                            <a class="nav-top" id="invoices-nav" href="notifications.html"><i class="fa fa-dollar fa-fw"></i> <span class="mpl-sidebar-text">Notifications</span></a>
+                        </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="modals.html"><i class="fa fa-send fa-fw"></i> <span class="mpl-sidebar-text">Modals</span></a>
                         </li>
 						<li class="active">
-                            <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a class="nav-top" id="invoices-nav" href="tables.html"><i class="fa fa-table fa-fw"></i> <span class="mpl-sidebar-text">Tables</span></a>
                         </li>
-                        <li class="">
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Menu Item <i class="fa arrow pull-right"></i></a>
+
+                        <li class="sidebar-nav-header">
+                            <span class="mpl-sidebar-text">More</span>
+                        </li>
+                        <li class="flyout">
+                            <a href="#"><i class="fa fa-wrench fa-fw"></i> <span class="mpl-sidebar-text">Menu Item</span> <i class="hide-min fa arrow pull-right"></i></a>
                             <ul class="nav nav-second-level collapse collapse-level" aria-expanded="false">
                                 <li>
                                     <a href="#">Level 1 <span class="fa arrow pull-right"></span></a>
@@ -129,6 +140,13 @@
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="blank.html"><i class="fa fa-square-o fa-fw"></i> <span class="mpl-sidebar-text">Blank</span></a>
+                        </li>
+
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="no_sidebar.html"><i class="fa fa-square fa-fw"></i> <span class="mpl-sidebar-text">No Sidebar</span></a>
+                        </li>
                         
                     </ul>
                 </div>
@@ -138,43 +156,38 @@
         </nav>
 		<!-- Begin page content -->
 		<div id="content" class="animated fadeIn">
-			<div id="inner-content" class="animated fadeIn">
-				
+			<header>
+				<div class="header-content">
+
+					<h2>Tables</h2>
+					<p>Demo Page of Tables</p>
+
+				</div>
+			</header>
+			
+			<div id="inner-content">
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="row">
-							<div class="col-xs-12">
-								<div class="page-header">
-									<p class="lead">Tables</p>
-								</div>
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-6">
-								<div class="panel">
-									<div class="panel-body">
-									
-									</div>
-								</div>
-							</div>
+					<div class="col-md-6">
+						<div class="panel">
+							<div class="panel-body">
 							
-							<div class="col-md-6">
-								<div class="panel">
-									<div class="panel-body">
-										
-									</div>
-								</div>
 							</div>
 						</div>
+					</div>
 					
+					<div class="col-md-6">
+						<div class="panel">
+							<div class="panel-body">
+								
+							</div>
+						</div>
 					</div>
 				</div>
-				
 			</div>
+			
 			<footer class="footer">
-				<div class="container">
-					<p class="footer-text text-muted">&copy; company 2015</p>
+				<div>
+					<p class="footer-text">&copy; company 2015</p>
 				</div>
 			</footer>	
 		</div>
@@ -193,6 +206,7 @@
 		<!-- Flot Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.pie.js"></script>
+		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.resize.js"></script>
 		<script language="javascript" type="text/javascript" src="demo/flot_demo.js"></script>
 		
 		<!-- Morris Plugin Javascript -->
@@ -207,7 +221,7 @@
 		<!-- Toastr Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
 		<script language="javascript" type="text/javascript" src="demo/toastr_demo.js"></script>
-		
+						
 		<!-- Metis Menu Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
 		<script>

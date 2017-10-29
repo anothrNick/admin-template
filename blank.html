@@ -143,6 +143,10 @@
 						<li class="active">
                             <a class="nav-top" id="invoices-nav" href="blank.html"><i class="fa fa-square-o fa-fw"></i> <span class="mpl-sidebar-text">Blank</span></a>
                         </li>
+
+						<li>
+                            <a class="nav-top" id="invoices-nav" href="no_sidebar.html"><i class="fa fa-square fa-fw"></i> <span class="mpl-sidebar-text">No Sidebar</span></a>
+                        </li>
                         
                     </ul>
                 </div>
@@ -153,9 +157,23 @@
 		<!-- Begin page content -->
 		<div id="content" class="animated fadeIn">
 			<header>
-				<h2>Blank Page</h2>
-				<p>Example blank page</p>
+				<div class="header-content">
+
+					<h2>Blank Page</h2>
+					<p>Example blank page</p>
+
+					<ul class="nav nav-tabs">
+					  <li role="presentation" class="active"><a href="#">Home</a></li>
+					  <li role="presentation"><a href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+					</ul>
+
+				</div>
 			</header>
+			
+			<div id="inner-content">
+
+			</div>
 			
 			<footer class="footer">
 				<div>
@@ -165,35 +183,11 @@
 		</div>
 		
 		<!-- SCRIPTS -->
-		<script language="javascript" type="text/javascript" src="js/script.js"></script>
 		
 		<script language="javascript" type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
 		<script language="javascript" type="text/javascript" src="plugins/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-		
-		<!-- Bootrap Dialog Plugin JavaScript -->
-		<script language="javascript" type="text/javascript" src="plugins/bootstrap3-dialog-master/bootstrap-dialog.js"></script>
-		<script language="javascript" type="text/javascript" src="demo/bootstrapdialog_demo.js"></script>
-		
-		<!-- Flot Plugin JavaScript -->
-		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.js"></script>
-		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.pie.js"></script>
-		<script language="javascript" type="text/javascript" src="plugins/flot/jquery.flot.resize.js"></script>
-		<script language="javascript" type="text/javascript" src="demo/flot_demo.js"></script>
-		
-		<!-- Morris Plugin Javascript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-		<script language="javascript" type="text/javascript" src="plugins/morris/morris.min.js"></script>
-		<script language="javascript" type="text/javascript" src="demo/morris_demo.js"></script>
-		
-		<!-- Sparkline Plugin Javascript -->
-		<script language="javascript" type="text/javascript" src="plugins/sparkline/jquery.sparkline.js"></script>
-		<script language="javascript" type="text/javascript" src="demo/sparkline_demo.js"></script>
-		
-		<!-- Toastr Plugin JavaScript -->
-		<script language="javascript" type="text/javascript" src="plugins/toastr/toastr.js"></script>
-		<script language="javascript" type="text/javascript" src="demo/toastr_demo.js"></script>
-		
+				
 		<!-- Metis Menu Plugin JavaScript -->
 		<script language="javascript" type="text/javascript" src="plugins/metisMenu/metisMenu.js"></script>
 		<script>
