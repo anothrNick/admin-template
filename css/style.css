@@ -571,6 +571,7 @@ svg {width:100%;}
 [class*="panel-info"]{ border-top-color: var(--information); background-color: #FFF;}
 [class*="panel-warning"]{ border-top-color: var(--warning); background-color: #FFF;}
 [class*="panel-danger"]{ border-top-color: var(--danger); background-color: #FFF;}
+[class*="panel-accent"]{ border-top-color: var(--highlight); background-color: #FFF;}
 
 .panel-click{
 	transition: box-shadow .15s ease-in-out;
