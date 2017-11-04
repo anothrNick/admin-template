@@ -536,6 +536,29 @@ svg {width:100%;}
 	left: inherit;
 }
 
+/* LOGIN & REGISTER PAGE */
+.simple{
+	display: grid;
+	align-items: center;
+}	
+
+.simple,
+.animated{
+	height: 100%;
+}
+
+.btn-link-border {
+	color: #FFF;
+	border: 2px solid #FFF;
+	text-align: center;
+	border-radius: 2px;
+}
+.btn-link-border:hover,
+.btn-link-border:focus {
+	color: #FFF;
+	text-decoration: none;
+}
+
 
 /* PANELS */
 .panel{
