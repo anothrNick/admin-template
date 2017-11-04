@@ -372,31 +372,42 @@ svg {width:100%;}
 	margin-bottom: 0px;
 }
 
-#content > header .nav-tabs {
+.sq-tabs {
     border: none;
+}
+
+#content > header .sq-tabs {
     margin-bottom: -20px;
     margin-top: 20px;
 }
 
-#content > header .nav-tabs>li.active>a, 
-#content > header .nav-tabs>li.active>a:hover, 
-#content > header .nav-tabs>li.active>a:focus {
-    color: #555;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid var(--border-color);
-    border-bottom-color: transparent;
-    border-top-width: 3px;
-    border-top-color: var(--highlight);
+.sq-tabs>li>a:hover {
+	cursor: pointer;
+	color: #555;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0px -3px var(--highlight);
+    border-top: 3px solid transparent;
 }
 
-#content > header .nav-tabs>li>a {
-    border-bottom-width: 3px;
+.sq-tabs>li.active>a, 
+.sq-tabs>li.active>a:hover, 
+.sq-tabs>li.active>a:focus {
+    color: #555;
+    cursor: default;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0px -3px var(--highlight);
+    border-top: 3px solid transparent;
 }
-#content > header .nav-tabs>li>a:hover,
-#content > header .nav-tabs>li>a:focus {
-    border-color: var(--content-background);
-    background-color: var(--content-background);
+
+.sq-tabs>li>a,
+.sq-tabs>li>a:focus {
+	color: #555;
+    border: none;
+	transition: box-shadow 0.1s ease-in-out;
+    border-top: 3px solid transparent;
+    background-color: inherit;
 }
 
 #content > header > .header-content.limit-width {
