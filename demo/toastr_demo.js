@@ -148,4 +148,4 @@ toastr.options = {
 	  "showDuration": "0",
 	  "hideDuration": "0"
 	}
-toastr["info"]("Welcome to the meeple admin template :)", "Hello!");
+toastr["info"]("Welcome to the square admin template :)", "Hello!");
