@@ -572,6 +572,21 @@ svg {width:100%;}
 [class*="panel-warning"]{ border-top-color: var(--warning); background-color: #FFF;}
 [class*="panel-danger"]{ border-top-color: var(--danger); background-color: #FFF;}
 
+.panel-click{
+	transition: box-shadow .15s ease-in-out;
+   -moz-transition: box-shadow .15s ease-in-out;
+   -webkit-transition: box-shadow .15s ease-in-out;
+}
+
+.panel-click:hover{
+	box-shadow: 1px 2px 1px 0px rgba(0,0,0,.15);
+	cursor: pointer;
+}
+
+.panel-click:active{
+	box-shadow: none;
+}
+
 .panel-heading{
 	border-radius: 0px;
 }
