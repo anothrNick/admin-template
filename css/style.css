@@ -147,19 +147,19 @@ Best looking:
 -jungle
 -picton
 */
-[class*="-information"]{
+[class*="-sq-information"]{
   background-color: var(--information);
   border-color: var(--information);
 }
-[class*="-success"] {
+[class*="-sq-success"] {
   background-color: var(--success);
   border-color: var(--success);
 }
-[class*="-warning"]{
+[class*="-sq-warning"]{
   background-color: var(--warning);
   border-color: var(--warning);
 }
-[class*="-danger"] {
+[class*="-sq-danger"] {
   background-color: var(--danger);
   border-color: var(--danger);
 }
