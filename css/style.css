@@ -543,7 +543,7 @@ svg {width:100%;}
 }	
 
 .simple,
-.animated{
+.simple>.animated{
 	height: 100%;
 }
 
