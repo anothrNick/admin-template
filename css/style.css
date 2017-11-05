@@ -147,7 +147,7 @@ Best looking:
 -jungle
 -picton
 */
-[class*="-info"]{
+[class*="-information"]{
   background-color: var(--information);
   border-color: var(--information);
 }
